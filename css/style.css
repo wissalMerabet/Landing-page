@@ -1,0 +1,160 @@
+:root{
+    /*! color*/ 
+    --primaryColore:#14A44D;
+    --primaryColore2:#00C853;
+    --secondaryColore1: #1e1c2a;
+    --secondaryColore2: #000033;
+    --lightColore1: #fff;
+    --lightColorGreen2:#e6ffe6;
+    --BlackColor:#222;
+    --light-black:#777;
+    /*! FontSize*/
+    --font-size: 1rem; 
+    --big-font: 6rem;
+    --h2-font:3rem;
+    --h1-font:4rem;
+    --p-font:1.1rem;
+    /*! border*/ 
+    --Border:.1rem solid var(var(--BlackColor));
+    /*! shadow*/
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+}
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0; margin: 0;
+    box-sizing: border-box; 
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+    list-style: none;
+
+}
+section{
+    padding: 2rem 9%;
+}
+
+.header .navbar{
+    background-color: #e0e0e0;
+}
+.navbar-brand{
+    color: var(--secondaryColore2);
+    font-size: 1.5rem ;
+    font-weight:bolder;
+    letter-spacing: 0.12;
+    cursor: pointer;
+}
+.navbar-brand span{
+    color: var(--primaryColore);
+    padding: 5px;
+    font-size: 2rem;
+}
+.header .navbar ul{
+    margin-left: 5rem;
+    
+}
+.header .navbar .navbar-nav a{
+    color: var(--secondaryColore2);
+    font-size: var(--p-font);
+}
+.header .navbar .navbar-nav a:hover{
+    color: var(--primaryColore);
+    text-decoration: underline;
+}
+.header .navbar .navbar-nav .nav-link.active{
+    background-color: var(--primaryColore);
+    border-radius: 5px;
+    color: var(--lightColore1);
+}
+.w-100{
+    height: 100vh;
+}
+
+/****** homme section*******/
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption{
+    bottom: 240px;
+    z-index:2;
+  
+}
+.carousel-caption h5{
+    font-size: 80px;
+    color: var(--lightColorGreen2);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.9;
+    color: var(--lightColorGreen2);
+    
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.6);
+    z-index: 1;
+}
+
+/** responsive css*/
+
+@media only screen and (min-width:768px) and ( max-width:991px){
+    .carousel-caption{
+        bottom: 360px;
+        margin-top: 55px;
+    }
+    .carousel-caption h5{
+        font-size: 45px;
+        letter-spacing: 2px;
+        margin-top: 45px;
+
+    }
+    .carousel-caption p{
+        width: 100%;
+        
+    }
+}
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 250px;
+        
+    }
+    .carousel-caption h5{
+        font-size: 30px;
+        letter-spacing: 2px;
+        
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+        
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 15px;
+        
+        
+    }
+
+}
+
+
+
+
+
